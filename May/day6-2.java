@@ -1,4 +1,8 @@
-// HashMap - O(n)
+/*
+ * Brute force
+ * Time complexity - O(n2)
+ * Space complexity - O(1)
+*/
 class Solution {
     public int majorityElement(int[] nums) {
         int majorityCount = nums.length/2;

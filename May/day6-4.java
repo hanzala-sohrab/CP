@@ -1,5 +1,7 @@
 /*
  * Randomization
+ * Time complexity - O(∞)
+ * Space complexity - O(1)
 */
 class Solution {
     private int randRange(Random rand, int min, int max) {

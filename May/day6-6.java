@@ -1,4 +1,8 @@
-// Boyer-Moore Voting Algorithm - O(n) for time, O(1) for space
+/* 
+ * Boyer-Moore Voting Algorithm
+ * Time complexity - O(n)
+ * Space complexity - O(1)
+*/
 class Solution {
     public int majorityElement(int[] nums) {
         int count = 0;

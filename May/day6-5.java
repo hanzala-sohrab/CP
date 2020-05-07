@@ -1,6 +1,8 @@
 /*
- * DnC - O(n lg n)
- */
+ * Divide & Conquer
+ * Time complexity - O(n lg n)
+ * Space complexity - O(lg n)
+*/
 class Solution {
     private int countInRange(int[] nums, int num, int lo, int hi) {
         int count = 0;
