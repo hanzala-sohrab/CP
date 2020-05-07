@@ -1,3 +1,4 @@
+// HashMap - O(n)
 class Solution {
     public int majorityElement(int[] nums) {
         int majorityCount = nums.length/2;
