@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 int main() {
-	long a,b,c,k,s=0;
+	long a, b, c, k, s=0;
 	cin>>a>>b>>c>>k;
 	if (a<=k)
 	{
