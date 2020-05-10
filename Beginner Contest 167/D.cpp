@@ -15,17 +15,15 @@ int main() {
 		if (visited[ans])
 			break;
 		path.push_back(ans);
-		//cout<<ans<<' ';
 		visited[ans]=true;
 	}
 	int l=path.size();
 	for (j=0;j<l;++j)
 		if (path[j]==ans)
 			break;
-	int l1=l-j;
+	l-=j;
 	k-=i;
-	//cout<<'\n'<<k<<'\n';
-	k%=l1;
+	k%=l;
 	ans=path[j+k]+1;
 	cout<<ans;
 	return 0;
