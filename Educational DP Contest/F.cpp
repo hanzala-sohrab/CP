@@ -23,9 +23,9 @@ int main() {
     lt=t.size();
     vector<vector<ll>> dp(lt+1, vector<ll> (ls+1,0));
     string a;
-    for (i=1;i<=lt;++i)
+    F(i,1,lt)
     {
-        for (j=1;j<=ls;++j)
+        F(j,1,ls)
         {
             if (s[j-1]==t[i-1])
                 dp[i][j]=dp[i-1][j-1]+1;
@@ -33,9 +33,11 @@ int main() {
                 dp[i][j]=max(dp[i-1][j],dp[i][j-1]);
         }
     }
-    for (i=lt;;)
+    i=lt;
+    j=ls;
+    while (1)
     {
-        for (j=ls;;)
+        while (1)
         {
             if (s[j-1]==t[i-1])
             {
