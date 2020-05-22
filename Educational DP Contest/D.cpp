@@ -22,5 +22,20 @@ int main() {
     F(i,0,n-1)
         I>>w[i]>>v[i];
     vector<vector<ll>> dp(n+1,vector<ll>(W+1,0));
+    for (i=1;i<=n;++i)
+    {
+        for (j=0;j<=W;++j)
+        {
+            if (j>=w[i-1])
+            {
+                dp[i][j]=max(v[i-1]+dp[i-1][j-w[i-1]],dp[i-1][j]);
+            }
+            else
+            {
+                dp[i][j]=dp[i-1][j];
+            }
+        }
+    }
+    cout<<dp[n][W]<<'\n';
     return 0;
 }
