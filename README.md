@@ -5,4 +5,4 @@ My solution to Atcoder problems
 
 ### AtCoder Educational DP Contest : https://atcoder.jp/contests/dp
 
-### AtCoder Beginner Contest 169 (10/05/2020) : https://atcoder.jp/contests/abc169
+### AtCoder Beginner Contest 169 (31/05/2020) : https://atcoder.jp/contests/abc169
