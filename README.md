@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CP
 =======
 # Codeforces
@@ -15,3 +16,7 @@ My solutions to problems on Leetcode
 
 May Leetcoding Challenge : https://leetcode.com/explore/featured/card/may-leetcoding-challenge/
 >>>>>>> Leetcode/master
+=======
+# HackerRank
+My HackerRank contest solutions
+>>>>>>> HackerRank/master
