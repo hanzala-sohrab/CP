@@ -12,17 +12,20 @@ Solution to Codeforces contest problems
 Testing Round #16 (Unrated) : https://codeforces.com/contest/1351
 
 Educational Codeforces Round 87 (Rated for Div. 2) : https://codeforces.com/contest/1354
+Codeforces Round #648 (Div. 2) : https://codeforces.com/contest/1365
 >>>>>>> Codeforces/master
 =======
 # Leetcode
 Solution to LeetCode contest problems
 
 May Leetcoding Challenge : https://leetcode.com/explore/featured/card/may-leetcoding-challenge/
+June Leetcoding Challenge : https://leetcode.com/explore/featured/card/june-leetcoding-challenge/
 >>>>>>> Leetcode/master
 =======
 # HackerRank
 Solution to HackerRank contest problems
 
+{CodeAsylums} Asy~namite Long Challenge v2.0 : https://www.hackerrank.com/contests/codeasylums-longcontest/challenges
 >>>>>>> HackerRank/master
 =======
 # Atcoder
@@ -41,6 +44,7 @@ Solution to CodeChef contest problem
 #### DSA Learning Series - Contest 1 (LRNDSA01) : https://www.codechef.com/LRNDSA01
 #### DSA Learning Series - Contest 7 (LRNDSA07) : https://www.codechef.com/LRNDSA07
 #### May Lunchtime 2020 Division 2 (LTIME84B) : https://www.codechef.com/LTIME84B
+
 >>>>>>> CodeChef/master
 =======
 # SPOJ
