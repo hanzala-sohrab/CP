@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CP
 =======
 # Codeforces
@@ -40,3 +41,6 @@ Solution to CodeChef contest problem
 #### DSA Learning Series - Contest 7 (LRNDSA07) : https://www.codechef.com/LRNDSA07
 #### May Lunchtime 2020 Division 2 (LTIME84B) : https://www.codechef.com/LTIME84B
 >>>>>>> CodeChef/master
+=======
+# My solution to various problems on SPOJ
+>>>>>>> SPOJ/master
