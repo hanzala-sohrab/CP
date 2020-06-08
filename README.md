@@ -12,6 +12,7 @@ Solution to Codeforces contest problems
 Testing Round #16 (Unrated) : https://codeforces.com/contest/1351
 
 Educational Codeforces Round 87 (Rated for Div. 2) : https://codeforces.com/contest/1354
+
 Codeforces Round #648 (Div. 2) : https://codeforces.com/contest/1365
 >>>>>>> Codeforces/master
 =======
@@ -19,6 +20,7 @@ Codeforces Round #648 (Div. 2) : https://codeforces.com/contest/1365
 Solution to LeetCode contest problems
 
 May Leetcoding Challenge : https://leetcode.com/explore/featured/card/may-leetcoding-challenge/
+
 June Leetcoding Challenge : https://leetcode.com/explore/featured/card/june-leetcoding-challenge/
 >>>>>>> Leetcode/master
 =======
