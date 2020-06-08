@@ -7,7 +7,7 @@
 # CP
 =======
 # Codeforces
-My solutions to various Codeforces problems
+Solution to Codeforces contest problems
 
 Testing Round #16 (Unrated) : https://codeforces.com/contest/1351
 
@@ -15,17 +15,18 @@ Educational Codeforces Round 87 (Rated for Div. 2) : https://codeforces.com/cont
 >>>>>>> Codeforces/master
 =======
 # Leetcode
-My solutions to problems on Leetcode
+Solution to LeetCode contest problems
 
 May Leetcoding Challenge : https://leetcode.com/explore/featured/card/may-leetcoding-challenge/
 >>>>>>> Leetcode/master
 =======
 # HackerRank
-My HackerRank contest solutions
+Solution to HackerRank contest problems
+
 >>>>>>> HackerRank/master
 =======
 # Atcoder
-My solution to Atcoder problems
+Solution to AtCoder contest problems
 
 ### AtCoder Beginner Contest 167 (10/05/2020) : https://atcoder.jp/contests/abc167
 
@@ -42,5 +43,7 @@ Solution to CodeChef contest problem
 #### May Lunchtime 2020 Division 2 (LTIME84B) : https://www.codechef.com/LTIME84B
 >>>>>>> CodeChef/master
 =======
-# My solution to various problems on SPOJ
+# SPOJ
+Solution to SPOJ contest problems
+
 >>>>>>> SPOJ/master
