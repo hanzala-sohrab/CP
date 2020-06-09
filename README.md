@@ -1,5 +1,5 @@
 # CP
-=======
+-----------------------
 # Codeforces
 Solution to Codeforces contest problems
 
