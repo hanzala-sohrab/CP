@@ -10,7 +10,7 @@ Educational Codeforces Round 87 (Rated for Div. 2) : https://codeforces.com/cont
 
 Codeforces Round #648 (Div. 2) : https://codeforces.com/contest/1365
 
-# Leetcode
+# LeetCode
 Solution to LeetCode contest problems
 
 May Leetcoding Challenge : https://leetcode.com/explore/featured/card/may-leetcoding-challenge/
@@ -22,7 +22,7 @@ Solution to HackerRank contest problems
 
 {CodeAsylums} Asy~namite Long Challenge v2.0 : https://www.hackerrank.com/contests/codeasylums-longcontest/challenges
 
-# Atcoder
+# AtCoder
 Solution to AtCoder contest problems
 
 AtCoder Beginner Contest 167 (10/05/2020) : https://atcoder.jp/contests/abc167
