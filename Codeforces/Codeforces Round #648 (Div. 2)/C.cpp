@@ -13,22 +13,6 @@ using namespace std;
 #define ff first
 #define ss second
 
-bool isPowerOfTwo (ll x) {
-    return x && (!(x&(x-1)));
-}
-
-ll binpow(ll a, ll b) {
-    a %= M;
-    ll res = 1;
-    while (b > 0) {
-        if (b & 1)
-            res = res * a % M;
-        a = a * a % M;
-        b >>= 1;
-    }
-    return res;
-}
-
 int main() {
     I.sync_with_stdio(false);
     I.tie(0);
