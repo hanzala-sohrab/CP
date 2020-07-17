@@ -32,17 +32,17 @@ ll binpow(ll a, ll b) {
 
 bool is_good(ll v[],  ll n) {
     ll i, j, k, l = n;
-    V<ll> x;
+    V<ll> x(n);
     for (i = k = 0, j = l - 1; i <= j; ++k)
     {
         if (v[i] <= v[j])
         {
-            x.pb(v[i]);
+            x[k] = v[i];
             ++i;
         }
         else
         {
-            x.pb(v[j]);
+            x[k] = v[j];
             --j;
         }
         if (k > 0 and x[k] < x[k - 1])
@@ -63,9 +63,7 @@ int main() {
         ll a[n];
         bool v = true;
         F (i, 0, n - 1)
-        {
             I >> a[i];
-        }
         j = n;
         F (i, 0, n - 1)
         {
