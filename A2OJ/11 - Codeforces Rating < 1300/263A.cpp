@@ -33,18 +33,18 @@ ll binpow(ll a, ll b) {
 int main() {
     I.sync_with_stdio(false);
     I.tie(0);
-    ll n, i, x, y, z, X = 0, Y = 0, Z = 0;
-    I >> n;
-    F (i, 0, n - 1)
-    {
-        I >> x >> y >> z;
-        X += x;
-        Y += y;
-        Z += z;
-    }
-    if (!X and !Y and !Z)
-        O << "YES\n";
-    else
-        O << "NO\n";
+    ll i, j, c = 0, ro = -1, co = -1;
+    ll m[5][5];
+    F (i, 0, 4)
+        F (j, 0, 4)
+        {
+            I >> m[i][j];
+            if (m[i][j])
+            {
+                ro = i + 1;
+                co = j + 1;
+            }
+        }
+    O << abs(3 - ro) + abs(3 - co) << '\n';
     return 0;
 }
