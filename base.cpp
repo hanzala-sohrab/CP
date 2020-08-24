@@ -20,6 +20,7 @@ bool isPowerOfTwo (ll x) {
     return x && (!(x&(x-1)));
 }
 
+// https://cp-algorithms.com/algebra/binary-exp.html#toc-tgt-3
 ll binpow(ll a, ll b) {
     a %= M;
     ll res = 1;
@@ -32,6 +33,7 @@ ll binpow(ll a, ll b) {
     return res;
 }
 
+// https://lemire.me/blog/2013/12/26/fastest-way-to-compute-the-greatest-common-divisor/
 unsigned gcd(unsigned u, unsigned v)
 {
     auto shift = __builtin_ctz(u | v);
