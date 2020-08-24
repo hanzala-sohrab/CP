@@ -13,6 +13,8 @@ using namespace std;
 #define ff first
 #define ss second
 #define umap unordered_map
+#define mp make_pair
+#define found(m, x) (m.find(x)!=m.end())
 
 bool isPowerOfTwo (ll x) {
     return x && (!(x&(x-1)));
@@ -28,6 +30,19 @@ ll binpow(ll a, ll b) {
         b >>= 1;
     }
     return res;
+}
+
+unsigned gcd(unsigned u, unsigned v)
+{
+    auto shift = __builtin_ctz(u | v);
+    u >>= __builtin_ctz(u);
+    do
+    {
+        v >>= __builtin_ctz(v);
+        if(u > v)
+            std::swap(u, v);
+    } while((v -= u));
+    return u << shift;
 }
 
 int main() {
