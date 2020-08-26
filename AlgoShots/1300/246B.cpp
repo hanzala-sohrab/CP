@@ -5,7 +5,6 @@ using namespace std;
 #define F(a,b,c) for (a=b;a<=c;++a)
 #define I cin
 #define O cout
-#define pb push_back
 #define all(x) x.begin(),x.end()
 
 int main() {
