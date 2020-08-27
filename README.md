@@ -18,3 +18,6 @@ https://www.codechef.com/users/han_so
 
 ## A2OJ
 https://a2oj.com/profile?Username=hanzala
+
+## AlgoShots
+http://www.algoshots.com/
