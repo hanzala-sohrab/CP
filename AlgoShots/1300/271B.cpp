@@ -17,7 +17,6 @@ int main() {
     V<V<ll>> mat(n, V<ll>(m)), f(n, V<ll>(m));
 
     // generating primes less than 1e5+4
-    map<ll, bool> is_prime;
     V<ll> primes;
     V<bool> p(M, true);
     for (i=2;i*i<=M;++i)
@@ -26,10 +25,7 @@ int main() {
                 p[j] = false;
     F(i,2,M)
         if (p[i])
-        {
             primes.pb(i);
-            is_prime[p[i]] = true;
-        }
     auto it = primes.begin();
 
     // Matrix input
