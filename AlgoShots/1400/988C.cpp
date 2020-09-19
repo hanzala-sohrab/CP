@@ -38,7 +38,7 @@ int main() {
                 O<<"YES\n";
                 O<<i+1<<' '<<j+1<<'\n';
                 O<<m[sum[i][j]]+1<<' ';
-                ll s1 = 0, x = m[sum[i][j]];
+                ll x = m[sum[i][j]];
                 F(l,0,n[x])
                     if (sum[x][l] == sum[i][j])
                     {
