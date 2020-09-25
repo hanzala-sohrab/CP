@@ -8,37 +8,6 @@ using namespace std;
 #define mp make_pair
 #define found(m, x) (m.find(x)!=m.end())
 
-// bool isPowerOfTwo (ll x) {
-//     return x && (!(x&(x-1)));
-// }
-
-// // https://cp-algorithms.com/algebra/binary-exp.html#toc-tgt-3
-// ll binpow(ll a, ll b) {
-//     a %= M;
-//     ll res = 1;
-//     while (b > 0) {
-//         if (b & 1)
-//             res = res * a % M;
-//         a = a * a % M;
-//         b >>= 1;
-//     }
-//     return res;
-// }
-
-// // https://lemire.me/blog/2013/12/26/fastest-way-to-compute-the-greatest-common-divisor/
-// unsigned gcd(unsigned u, unsigned v)
-// {
-//     auto shift = __builtin_ctz(u | v);
-//     u >>= __builtin_ctz(u);
-//     do
-//     {
-//         v >>= __builtin_ctz(v);
-//         if(u > v)
-//             std::swap(u, v);
-//     } while((v -= u));
-//     return u << shift;
-// }
-
 int main() {
     I.sync_with_stdio(false);
     I.tie(0);
