@@ -1,6 +1,9 @@
 # CP
 ---------------------------------------------------------
 
+## CodeChef
+https://www.codechef.com/users/han_so
+
 ## Codeforces
 https://codeforces.com/profile/hanzala
 
@@ -12,9 +15,6 @@ https://www.hackerrank.com/sorb_hanzala
 
 ## AtCoder
 https://atcoder.jp/users/hanzala
-
-## CodeChef
-https://www.codechef.com/users/han_so
 
 ## A2OJ
 https://a2oj.com/profile?Username=hanzala
