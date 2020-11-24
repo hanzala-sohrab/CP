@@ -1,3 +1,3 @@
 # CP-List
 
-[1. Linear Search](./Linear\ Search/README.md)
+[1. Linear Search]("Linear Search/README.md")
