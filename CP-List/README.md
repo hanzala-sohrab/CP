@@ -7,3 +7,5 @@
 [Prefix Sum](./Prefix%20Sum/README.md)
 
 [Sliding Window](./Sliding%20Window/README.md)
+
+[Binary Search](./Binary%20Search/README.md)
