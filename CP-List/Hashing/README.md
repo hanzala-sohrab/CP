@@ -4,6 +4,6 @@
 
 [Registration system](https://codeforces.com/problemset/problem/4/C) - [Solution](Registration%20system.cpp)
 
-[Perfect Pair](https://www.hackerearth.com/practice/data-structures/hash-tables/basics-of-hash-tables/practice-problems/algorithm/perfect-pair-df920e90/description/) - [Solution](3.cpp)
+[Perfect Pair](https://www.hackerearth.com/practice/data-structures/hash-tables/basics-of-hash-tables/practice-problems/algorithm/perfect-pair-df920e90/description/) - [Solution](Perfect Pair.cpp)
 
 [OR in Matrix](https://codeforces.com/problemset/problem/486/B) - [Solution](4.cpp)
