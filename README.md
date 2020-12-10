@@ -1,6 +1,10 @@
 # CP
 ---------------------------------------------------------
 
+
+## CP-List
+https://github.com/hanzala-sohrab/CP/tree/master/CP-List
+
 ## CodeChef
 https://www.codechef.com/users/han_so
 
