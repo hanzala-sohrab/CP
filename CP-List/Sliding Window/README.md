@@ -1,4 +1,4 @@
-# Prefix Sum
+# Sliding Window
 
 [Min Max Riddle](https://www.hackerrank.com/challenges/min-max-riddle/problem) - [Solution](MinMaxRiddle.cpp)
 
