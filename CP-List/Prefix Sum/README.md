@@ -1,6 +1,6 @@
 # Prefix Sum
 
-- [x] [Cumulative Sum Query](https://www.spoj.com/problems/CSUMQ) - [Solution](CSUM.cpp)
+- [x] [Cumulative Sum Query](https://www.spoj.com/problems/CSUMQ) - [Solution](CSUMQ.cpp)
 
 - [x] [Man with No Name](https://www.codechef.com/problems/BLONDIE) - [Solution](BLONDIE.cpp)
 
