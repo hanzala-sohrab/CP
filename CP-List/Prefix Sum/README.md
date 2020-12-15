@@ -2,7 +2,7 @@
 
 - [x] [Cumulative Sum Query](https://www.spoj.com/problems/CSUMQ) - [Solution](CSUM.cpp)
 
-- [ ] [Man with No Name](https://www.codechef.com/problems/BLONDIE) - [Solution](BLONDIE.cpp)
+- [x] [Man with No Name](https://www.codechef.com/problems/BLONDIE) - [Solution](BLONDIE.cpp)
 
 - [ ] [Digit Primes](https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=1474) - [Solution](10533.cpp)
 
