@@ -13,41 +13,19 @@ int main(int argc, char const *argv[])
 		int a[n];
 		for (i = 0; i < n; ++i)
 			cin >> a[i];
-		if (n == 1)
+		for (k = 0, i = 0, j = n - 1; k < n; ++k)
 		{
-			cout << a[0] << '\n';
-			continue;
+			if (k & 1)
+			{
+				cout << a[j] << ' ';
+				--j;
+			}
+			else
+			{
+				cout << a[i] << ' ';
+				++i;
+			}
 		}
-		if (n & 1)
-			for (k = 0, i = 0, j = n - 1; k < n; ++k)
-			{
-				if (k & 1)
-				{
-					cout << a[j] << ' ';
-					--j;
-				}
-				else
-				{
-					cout << a[i] << ' ';
-					++i;
-				}
-			}
-		else
-			for (k = 0, i = 0, j = n - 1; k < n; ++k)
-			{
-				if (k & 1)
-				{
-					cout << a[j] << ' ';
-					--j;
-				}
-				else
-				{
-					cout << a[i] << ' ';
-					++i;
-				}
-			}
-		// for (i = 0; i < n; ++i)
-		// 	cout << b[i] << ' ';
 		cout << '\n';
 	}
 	return 0;
