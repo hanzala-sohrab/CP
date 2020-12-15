@@ -1,10 +1,9 @@
 #include<bits/stdc++.h>
 using namespace std;
-int main(int argc, char const *argv[])
-{
+int main() {
 	cin.sync_with_stdio(false);
 	cin.tie(0);
-	long long T, i, j, k, N, Q;
+	long long T, i, j, N;
 	cin >> T;
 	while (T--)
 	{
