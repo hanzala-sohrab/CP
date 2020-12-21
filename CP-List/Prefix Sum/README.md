@@ -10,7 +10,7 @@
 
 - [ ] [SIMPLE MODIFICATION](https://www.codechef.com/COW42020/problems/COW3E) - [Solution](COW3E.cpp) (2d prefix sum)
 
-- [ ] [Pongal Bunk](https://www.codechef.com/problems/COWA19B) - [Solution](COWA19B.cpp)
+- [x] [Pongal Bunk](https://www.codechef.com/problems/COWA19B) - [Solution](COWA19B.cpp)
 
 - [ ] [Transmutation Diamonds](https://www.codechef.com/problems/MXPOWER) - [Solution](MXPOWER.cpp)
 
