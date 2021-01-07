@@ -34,7 +34,6 @@ int main()
 
 void sort012(int a[], int n)
 {
-    // coode here
     int i, j = 0, z = 0, o = 0, t = 0;
     for (i = 0; i < n; ++i)
     {
