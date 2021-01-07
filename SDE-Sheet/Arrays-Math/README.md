@@ -2,7 +2,7 @@
 
 - [x] [Find the duplicate in an array of N+1 integers](https://practice.geeksforgeeks.org/problems/find-duplicates-in-an-array/1) - [Solution](01.cpp)
 
-- [ ] [Sort an array of 0’s 1’s 2’s without using extra space or sorting algo](https://practice.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1) - [Solution](02.cpp)
+- [x] [Sort an array of 0’s 1’s 2’s without using extra space or sorting algo](https://practice.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1) - [Solution](02.cpp)
 
 - [ ] [Repeat and Missing Number](https://practice.geeksforgeeks.org/problems/find-missing-and-repeating2512/1) - [Solution](03.cpp)
 
