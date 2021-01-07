@@ -4,7 +4,7 @@
 
 - [x] [Sort an array of 0’s 1’s 2’s without using extra space or sorting algo](https://practice.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1) - [Solution](02.cpp)
 
-- [ ] [Repeat and Missing Number](https://practice.geeksforgeeks.org/problems/find-missing-and-repeating2512/1) - [Solution](03.cpp)
+- [x] [Repeat and Missing Number](https://practice.geeksforgeeks.org/problems/find-missing-and-repeating2512/1) - [Solution](03.cpp)
 
 - [ ] [Merge two sorted Arrays without extra space](https://practice.geeksforgeeks.org/problems/merge-two-sorted-arrays-1587115620/1) - [Solution](04.cpp)
 
