@@ -8,7 +8,7 @@
 
 - [ ] [Merge two sorted Arrays without extra space](https://practice.geeksforgeeks.org/problems/merge-two-sorted-arrays-1587115620/1) - [Solution](04.cpp)
 
-- [ ] [Kadane’s Algorithm](https://practice.geeksforgeeks.org/problems/kadanes-algorithm-1587115620/1) - [Solution](05.cpp)
+- [x] [Kadane’s Algorithm](https://practice.geeksforgeeks.org/problems/kadanes-algorithm-1587115620/1) - [Solution](05.cpp)
 
 - [x] [Merge Overlapping Subintervals](https://practice.geeksforgeeks.org/problems/overlapping-intervals4919/1) - [Solution](06.cpp)
 
