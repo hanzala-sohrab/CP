@@ -22,11 +22,11 @@
 
 - [ ] [Stock Buy and Sell](https://practice.geeksforgeeks.org/problems/stock-buy-and-sell-1587115621/1) - [Solution](11.cpp)
 
-- [ ] [Rotate Matrix](https://practice.geeksforgeeks.org/problems/rotate-by-90-degree-1587115621/1) - [Solution](12.cpp)
+- [x] [Rotate Matrix](https://practice.geeksforgeeks.org/problems/rotate-by-90-degree-1587115621/1) - [Solution](12.cpp)
 
 - [ ] [Search in a 2D matrix](https://leetcode.com/problems/search-a-2d-matrix/) - [Solution](13.cpp)
 
-- [ ] [Pow(X,n)](https://practice.geeksforgeeks.org/problems/power-of-numbers-1587115620/1) - [Solution](14.cpp)
+- [x] [Pow(X,n)](https://practice.geeksforgeeks.org/problems/power-of-numbers-1587115620/1) - [Solution](14.cpp)
 
 - [ ] [Majority Element (>N/2 times)](https://practice.geeksforgeeks.org/problems/majority-element-1587115620/1) - [Solution](15.cpp)
 
