@@ -12,7 +12,7 @@
 
 - [x] [Merge Overlapping Subintervals](https://practice.geeksforgeeks.org/problems/overlapping-intervals4919/1) - [Solution](06.cpp)
 
-- [ ] [Set Matrix Zeros](https://leetcode.com/problems/set-matrix-zeroes/) - [Solution](07.cpp)
+- [x] [Set Matrix Zeros](https://leetcode.com/problems/set-matrix-zeroes/) - [Solution](07.cpp)
 
 - [ ] [Pascal Triangle](https://practice.geeksforgeeks.org/problems/pascal-triangle0652/1) - [Solution](08.cpp)
 
