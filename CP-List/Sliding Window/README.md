@@ -1,6 +1,6 @@
 # Sliding Window
 
-- [ ] [Min Max Riddle](https://www.hackerrank.com/challenges/min-max-riddle/problem) - [Solution](MinMaxRiddle.cpp)
+- [x] [Min Max Riddle](https://www.hackerrank.com/challenges/min-max-riddle/problem) - [Solution](MinMaxRiddle.cpp)
 
 - [ ] [Fence](https://codeforces.com/problemset/problem/363/B) - [Solution](363B.cpp)
 
