@@ -4,7 +4,7 @@
 
 - [ ] [Fence](https://codeforces.com/problemset/problem/363/B) - [Solution](363B.cpp)
 
-- [ ] [Shivigawdz](https://www.codechef.com/problems/SHIVIGOD) - [Solution](SHIVIGOD.cpp) (try to do using sliding window)
+- [x] [Shivigawdz](https://www.codechef.com/problems/SHIVIGOD) - [Solution](SHIVIGOD.cpp) (try to do using sliding window)
 
 - [ ] [Birthday Gift Again](https://www.codechef.com/problems/BDGFT) - [Solution](BDGFT.cpp)
 
