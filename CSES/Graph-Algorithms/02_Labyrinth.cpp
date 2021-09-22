@@ -27,7 +27,7 @@ bool bfs() {
 
 		if (labyrinth[r][c] == 'B')
 		{
-			while (1)
+			while (labyrinth[r][c] != 'A')
 			{
 				shortestPath.push_back(paths[r][c]);
 				if (shortestPath.back() == 'U')
@@ -38,9 +38,6 @@ bool bfs() {
 					--r;
 				if (shortestPath.back() == 'L')
 					++c;
-
-				if (labyrinth[r][c] == 'A')
-					break;
 			}
 			return true;
 		}
