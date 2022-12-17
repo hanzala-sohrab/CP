@@ -8,7 +8,7 @@ int main()
 {
     I.sync_with_stdio(false);
     I.tie(0);
-    ll t, n, q, i, j, k;
+    ll t, n, x, i;
     I >> t;
     while (t--)
     {
@@ -17,7 +17,7 @@ int main()
             O << n / 2 << ' ' << n / 2 << '\n';
         else
         {
-            ll x = n;
+            x = n;
             for (i = 3; i * i <= n; i += 2)
                 if (n % i == 0)
                 {
