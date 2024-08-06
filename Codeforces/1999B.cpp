@@ -52,14 +52,13 @@ int main() {
     I >> a1 >> a2 >> b1 >> b2;
     ll ma = min(a1, a2), Ma = max(a1, a2), mb = min(b1, b2), Mb = max(b1, b2);
     ll ans = 0;
-    if (ma > Mb) {
+    if (Mb <= ma) {
       ans = 4;
-    } else if (ma == Mb and Ma != ma) {
-      ans = 3;
-    } else if (ma > mb and Ma > mb) {
+    } else if (ma >= mb) {
       ans = 2;
-    } else if (Ma > mb) {
-      ans = 1;
+    }
+    if (a1 == a2 and a1 == b1 and b1 == b2) {
+      ans = 0;
     }
     O << ans << '\n';
   }
