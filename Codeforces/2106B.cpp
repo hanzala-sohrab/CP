@@ -30,7 +30,6 @@ int main()
 
         if (j < n)
         {
-
             O << x;
         }
 
