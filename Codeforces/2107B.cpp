@@ -11,36 +11,43 @@ int main()
 {
     I.sync_with_stdio(false);
     I.tie(0);
-    ll t, n, q, i, j, k;
+    int t;
     I >> t;
     while (t--)
     {
+        int i, n, k;
+
         I >> n >> k;
-        V<ll> a(n);
-        q = 0;
+
+        vector<int> a(n);
+
+        ll totalNumberOfApples = 0;
+
         F(i, 0, n - 1)
         {
             I >> a[i];
-            q += a[i];
+            totalNumberOfApples += a[i];
         }
 
-        ll M = *max_element(all(a));
-        ll m = *min_element(all(a));
+        int maxNumberOfApplesInABox = *max_element(all(a));
+        int minNumberOfApplesInABox = *min_element(all(a));
 
-        ll cM = 0;
-        F(i,0,n-1){
-            if (a[i] == M) {
+        int cM = 0;
+        F(i, 0, n - 1)
+        {
+            if (a[i] == maxNumberOfApplesInABox)
+            {
                 ++cM;
             }
         }
 
-        if (M - m - 1 > k or (M - m > k and cM > 1))
+        if (maxNumberOfApplesInABox - minNumberOfApplesInABox - 1 > k or (maxNumberOfApplesInABox - minNumberOfApplesInABox > k and cM > 1))
         {
             O << "Jerry\n";
         }
         else
         {
-            O << (q & 1 ? "Tom" : "Jerry") << '\n';
+            O << (totalNumberOfApples & 1 ? "Tom" : "Jerry") << '\n';
         }
     }
     return 0;
