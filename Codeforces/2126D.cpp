@@ -10,7 +10,7 @@ using namespace std;
 
 int f(V<V<int>> &a, int k, int ind, V<int> &dp)
 {
-    if (ind == a.size() or a[ind][0] > k or a[ind][1] < k)
+    if (ind == a.size())
     {
         return k;
     }
@@ -20,7 +20,16 @@ int f(V<V<int>> &a, int k, int ind, V<int> &dp)
         return dp[ind];
     }
 
-    return dp[ind] = max(f(a, a[ind][2], ind + 1, dp), f(a, k, ind + 1, dp));
+    int b = 0;
+
+    if (a[ind][0] <= k and k <= a[ind][1])
+    {
+        b = f(a, max(k, a[ind][2]), ind + 1, dp);
+    }
+
+    int c = f(a, k, ind + 1, dp);
+
+    return dp[ind] = max(b, c);
 }
 
 int main()
