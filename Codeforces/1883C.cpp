@@ -23,22 +23,19 @@ int main()
             a[i] = j % k;
         }
         if (k == 1 or *min_element(all(a)) == 0)
-        {
             O << "0\n";
-            continue;
-        }
-        if (k == 2 or k == 3 or k == 5)
-        {
-            O << k - *max_element(all(a)) << '\n';
-            continue;
-        }
-        int c2 = count(all(a), 2);
-        if (c2)
-            O << (c2 > 1 ? 0 : 1);
-        else if (count(all(a), 3))
-            O << 1;
+        else if (k == 2 or k == 3 or k == 5)
+            O << k - *max_element(all(a));
         else
-            O << (count(all(a), 1) > 1 ? 2 : 3);
+        {
+            int c2 = count(all(a), 2);
+            if (c2)
+                O << (c2 > 1 ? 0 : 1);
+            else if (count(all(a), 3))
+                O << 1;
+            else
+                O << (count(all(a), 1) > 1 ? 2 : 3);
+        }
         O << '\n';
     }
     return 0;
