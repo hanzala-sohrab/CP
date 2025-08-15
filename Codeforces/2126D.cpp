@@ -11,21 +11,15 @@ using namespace std;
 int f(V<V<int>> &a, int k, int ind, V<int> &dp)
 {
     if (ind == a.size())
-    {
         return k;
-    }
 
     if (dp[ind] != -1)
-    {
         return dp[ind];
-    }
 
     int b = 0;
 
     if (a[ind][0] <= k and k <= a[ind][1])
-    {
         b = f(a, max(k, a[ind][2]), ind + 1, dp);
-    }
 
     int c = f(a, k, ind + 1, dp);
 
