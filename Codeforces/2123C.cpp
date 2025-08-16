@@ -34,9 +34,7 @@ int main()
         c[n - 1] = a[n - 1];
 
         for (i = n - 2; i >= 0; --i)
-        {
             c[i] = max(c[i + 1], a[i]);
-        }
 
         F(i, 0, n - 1)
         {
