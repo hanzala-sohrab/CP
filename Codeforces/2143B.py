@@ -4,9 +4,8 @@ def f(n: int, k: int, a: List[int], b: List[int]) -> int:
     a.sort(reverse=True)
     b.sort()
 
-    i = 0
-    j = 0
-    ans = 0
+    i, j = 0, 0
+
     while j < k and i + b[j] - 1 < n:
         i += b[j]
         a[i - 1] = 0
