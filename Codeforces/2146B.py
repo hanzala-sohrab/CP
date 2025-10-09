@@ -17,16 +17,17 @@ def is_possible(n: int, m: int, sets: List[Set[int]]) -> bool:
     for i in range(n):
         s = sets[i]
         temp_set = union_set - s
-        temp_freq = [el for el in freq]
         flag = True
         for el in s:
-            temp_freq[el] -= 1
-        for j in range(1, m + 1):
-            if temp_freq[j] == 0:
+            freq[el] -= 1
+            if freq[el] == 0:
                 flag = False
-                break
+        
         if flag:
             cnt += 1
+
+        for el in s:
+            freq[el] += 1
 
     return cnt >= 3
 
