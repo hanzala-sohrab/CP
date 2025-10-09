@@ -14,9 +14,7 @@ def is_possible(n: int, m: int, sets: List[Set[int]]) -> bool:
 
     cnt = 1
 
-    for i in range(n):
-        s = sets[i]
-        temp_set = union_set - s
+    for s in sets:
         flag = True
         for el in s:
             freq[el] -= 1
