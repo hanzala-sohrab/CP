@@ -1,6 +1,7 @@
 from typing import List
 
-def solve(n: int, a: List[int]) -> int:
+
+def solve(a: List[int]) -> int:
     a.sort(reverse=True)
 
     odd_elements = [el for el in a if el % 2 == 1]
@@ -29,5 +30,4 @@ if __name__ == "__main__":
     for _ in range(t):
         n = int(input())
         a = list(map(int, input().split()))
-        print(solve(n, a))
-
+        print(solve(a))
