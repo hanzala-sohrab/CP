@@ -45,16 +45,36 @@ def run_test(code_file, input_file, expected_output_file):
         print(f"Error: Expected output file '{expected_output_file}' not found.")
         return False
 
-    # Compare outputs
-    if actual_output == expected_output:
-        print("✓ Test passed!")
-        return True
-    else:
+    # Compare outputs line by line (assuming each line is a test case output)
+    expected_lines = expected_output.split("\n")
+    actual_lines = actual_output.split("\n")
+
+    if len(expected_lines) != len(actual_lines):
         print("✗ Test failed!")
+        print(
+            f"Number of output lines differ: expected {len(expected_lines)}, got {len(actual_lines)}"
+        )
         print("Expected output:")
         print(repr(expected_output))
         print("Actual output:")
         print(repr(actual_output))
+        return False
+
+    failed_cases = []
+    for i, (exp, act) in enumerate(zip(expected_lines, actual_lines), 1):
+        if exp.strip() != act.strip():
+            failed_cases.append((i, exp.strip(), act.strip()))
+
+    if not failed_cases:
+        print("✓ Test passed!")
+        return True
+    else:
+        print("✗ Test failed!")
+        print(f"Failed test cases: {len(failed_cases)} out of {len(expected_lines)}")
+        for case_num, exp, act in failed_cases:
+            print(f"Test case {case_num}:")
+            print(f"  Expected: {repr(exp)}")
+            print(f"  Actual: {repr(act)}")
         return False
 
 
