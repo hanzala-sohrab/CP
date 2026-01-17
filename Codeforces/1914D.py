@@ -9,7 +9,7 @@ class Activity(Enum):
     PLAY_GAMES = 3
 
 
-def solve(n: int, a: List[int], b: List[int], c: List[int]) -> int:
+def solve_dp(n: int, a: List[int], b: List[int], c: List[int]) -> int:
     dp = [
         [[[-1 for _ in range(2)] for _ in range(2)] for _ in range(2)] for _ in range(n)
     ]
@@ -42,6 +42,26 @@ def solve(n: int, a: List[int], b: List[int], c: List[int]) -> int:
         return dp[day][can_go_skiing][can_watch_movie][can_play_games]
 
     return f(0, 1, 1, 1)
+
+
+def max_3(a: List[int]):
+    return sorted([(val, idx) for idx, val in enumerate(a)], reverse=True)[0:3]
+
+
+def solve(n: int, a: List[int], b: List[int], c: List[int]) -> int:
+    max_a = max_3(a)
+    max_b = max_3(b)
+    max_c = max_3(c)
+
+    result = 0
+
+    for [v_a, d_a] in max_a:
+        for [v_b, d_b] in max_b:
+            for [v_c, d_c] in max_c:
+                if d_a != d_b and d_b != d_c and d_c != d_a:
+                    result = max(result, v_a + v_b + v_c)
+
+    return result
 
 
 if __name__ == "__main__":
