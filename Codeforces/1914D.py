@@ -10,45 +10,44 @@ class Activity(Enum):
 
 
 def solve(n: int, a: List[int], b: List[int], c: List[int]) -> int:
-    def f(day: int, remaining_activities: Set[int]) -> int:
-        if day == n or len(remaining_activities) == 1:
+    dp = [[-1] * 7 for _ in range(n + 1)]
+
+    def f(day: int, remaining_activities: int) -> int:
+        if day == n or remaining_activities == 0:
             return 0
+
+        if dp[day][remaining_activities] != -1:
+            return dp[day][remaining_activities]
 
         skiing = 0
         watch_movie = 0
         play_games = 0
         do_nothing = 0
 
-        if Activity.SKIING in remaining_activities:
-            remaining_activities.remove(Activity.SKIING)
+        if (
+            remaining_activities == 1
+            or remaining_activities == 4
+            or remaining_activities == 6
+        ):
+            remaining_activities -= Activity.SKIING.value
             skiing = a[day] + f(day + 1, remaining_activities)
-            remaining_activities.add(Activity.SKIING)
+            remaining_activities += Activity.SKIING.value
 
-        if Activity.WATCH_MOVIE in remaining_activities:
-            remaining_activities.remove(Activity.WATCH_MOVIE)
+        if remaining_activities > 4 or remaining_activities == 2:
+            remaining_activities -= Activity.WATCH_MOVIE.value
             watch_movie = b[day] + f(day + 1, remaining_activities)
-            remaining_activities.add(Activity.WATCH_MOVIE)
+            remaining_activities += Activity.WATCH_MOVIE.value
 
-        if Activity.PLAY_GAMES in remaining_activities:
-            remaining_activities.remove(Activity.PLAY_GAMES)
+        if remaining_activities > 2:
+            remaining_activities -= Activity.PLAY_GAMES.value
             play_games = c[day] + f(day + 1, remaining_activities)
-            remaining_activities.add(Activity.PLAY_GAMES)
+            remaining_activities += Activity.PLAY_GAMES.value
 
         do_nothing = f(day + 1, remaining_activities)
+        dp[day][remaining_activities] = max(skiing, watch_movie, play_games, do_nothing)
+        return dp[day][remaining_activities]
 
-        return max(skiing, watch_movie, play_games, do_nothing)
-
-    return f(
-        0,
-        set(
-            [
-                Activity.NOTHING,
-                Activity.SKIING,
-                Activity.WATCH_MOVIE,
-                Activity.PLAY_GAMES,
-            ]
-        ),
-    )
+    return f(0, 6)
 
 
 if __name__ == "__main__":
