@@ -10,14 +10,6 @@ class Solution {
         for (int i = 0; i < n; i++) {
           a[i] = sc.nextInt();
         }
-        int q = sc.nextInt();
-        int[][] queries = new int[q][2];
-        for (int i = 0; i < q; ++i) {
-          int l = sc.nextInt();
-          int r = sc.nextInt();
-          queries[i] = new int[]{l - 1, r - 1};
-        }
-
         int[] prevDiff = new int[n];
         prevDiff[0] = -1;
         for (int i = 1; i < n; ++i) {
@@ -27,23 +19,18 @@ class Solution {
             prevDiff[i] = prevDiff[i - 1];
           }
         }
-
-        int[][] ans = new int[q][2];
-        int i = 0;
-        for (int[] query: queries) {
-          int l = query[0];
-          int r = query[1];
-          if (prevDiff[r] < l || prevDiff[r] > r) {
-            ans[i] = new int[]{-1, -1};
-            ++i;
-            continue;
+        
+        int q = sc.nextInt();
+        for (int k = 0; k < q; ++k) {
+          int l = sc.nextInt() - 1;
+          int r = sc.nextInt() - 1;
+          int i = -1;
+          int j = -1;
+          if (l <= prevDiff[r] && prevDiff[r] <= r) {
+            i = prevDiff[r] + 1;
+            j = r + 1;
           }
-          ans[i] = new int[]{prevDiff[r] + 1, r + 1};
-          ++i;
-        }
-
-        for (int[] b: ans) {
-          System.out.println(b[0] + " " + b[1]);
+          System.out.println(i + " " + j);
         }
       }
     }
