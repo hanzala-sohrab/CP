@@ -17,7 +17,7 @@ class Solution {
           b[i] = sc.nextInt();
         }
         if (n < 2 * m) {
-          System.err.println("no");
+          System.out.println("no");
           continue;
         }
         Arrays.sort(a);
@@ -29,7 +29,7 @@ class Solution {
             break;
           }
         }
-        System.err.println(possible ? "yes" : "no");
+        System.out.println(possible ? "yes" : "no");
       }
     }
   }
