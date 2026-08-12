@@ -1,37 +1,42 @@
 def main():
     t = int(input())
+
     for _ in range(t):
         n, k = map(int, input().split())
-        if n == 2:
-            print("01" if k == 0 else -1)
+
+        runs = n - k
+
+        # All characters would have to be equal.
+        # Counts would differ by n-0, which is > 1 for n >= 2.
+        if runs == 1:
+            print(-1)
             continue
-        if k == n - 1:
-            print(0 if n == 1 else -1)
-            continue
-        
-        s = ""
+
         c0 = (n + 1) // 2
         c1 = n // 2
-        k = n - k
-        for i in range(1, k + 1):
-            if i % 2 == 1:
-                if i >= k - 1:
-                    while c0 > 0:
-                        s += "0"
-                        c0 -= 1
-                else:
-                    s += "0"
-                    c0 -= 1
-            else:
-                if i >= k - 1:
-                    while c1 > 0:
-                        s += "1"
-                        c1 -= 1
-                else:
-                    s += "1"
-                    c1 -= 1
-        print(s)
 
-        
+        ans = []
+
+        # We want 'runs' alternating blocks.
+        # Start with 0.
+        for i in range(runs):
+            if i % 2 == 0:
+                ans.append('0')
+                c0 -= 1
+            else:
+                ans.append('1')
+                c1 -= 1
+
+        # Distribute remaining characters.
+        #
+        # Add them to the last block.
+        if (runs - 1) % 2 == 0:
+            ans[-1] += '0' * c0
+        else:
+            ans[-1] += '1' * c1
+
+        print(''.join(ans))
+
+
 if __name__ == "__main__":
-	main()
+    main()
