@@ -1,30 +1,28 @@
+from collections import Counter
+
+
 def main():
     t = int(input())
-
     for _ in range(t):
         n = int(input())
         a = list(map(int, input().split()))
-
-        p = 1
+        cnt = Counter()
         for el in a:
-            p *= el
-
-        left, right = 1, p
-        found = False
-
-        while left <= right:
-            mid = (left + right) // 2
-            power = mid ** n
-
-            if power == p:
-                found = True
+            x = el
+            y = 2
+            while y * y <= x:
+                while x % y == 0:
+                    cnt[y] += 1
+                    x //= y
+                y += 1
+            if x > 1:
+                cnt[x] += 1
+        possible = True
+        for val in cnt.values():
+            if val % n != 0:
+                possible = False
                 break
-            elif power < p:
-                left = mid + 1
-            else:
-                right = mid - 1
-
-        print("YES" if found else "NO")
+        print("YES" if possible else "NO")
 
 
 if __name__ == "__main__":
