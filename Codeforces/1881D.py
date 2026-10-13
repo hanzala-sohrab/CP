@@ -1,4 +1,7 @@
 from collections import Counter
+import sys
+
+input = sys.stdin.readline
 
 
 def main():
@@ -7,21 +10,26 @@ def main():
         n = int(input())
         a = list(map(int, input().split()))
         cnt = Counter()
+
         for el in a:
             x = el
-            y = 2
-            while y * y <= x:
-                while x % y == 0:
-                    cnt[y] += 1
-                    x //= y
-                y += 1
+
+            while x % 2 == 0:
+                cnt[2] += 1
+                x //= 2
+
+            d = 3
+            while d * d <= x:
+                while x % d == 0:
+                    cnt[d] += 1
+                    x //= d
+                d += 2
+
             if x > 1:
                 cnt[x] += 1
-        possible = True
-        for val in cnt.values():
-            if val % n != 0:
-                possible = False
-                break
+
+        possible = all(val % n == 0 for val in cnt.values())
+
         print("YES" if possible else "NO")
 
 
