@@ -1,0 +1,5 @@
+[Unit]
+Description=Push accepted Codeforces solutions to GitHub
+[Service]
+Type=oneshot
+ExecStart=%h/.local/bin/cf-autopush
